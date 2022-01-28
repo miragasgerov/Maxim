@@ -1,0 +1,213 @@
+﻿@model HomeViewModel
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="sliderImg  d-flex justify-content-center ">
+                        <img src="~/Img/logo-image.png" class="img-fluid">
+                    </div>
+                    <div class="carousel-inner mt-5 ">
+                        <div class="carousel-item active text-center">
+                            <h1>EAT AND DRINK <strong>DESIGN</strong></h1>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <h1>CREATIVE AND <strong>PASSION</strong></h1>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <h1>WE LOVES <strong>SIMPLICITY</strong></h1>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="comment">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-2">
+
+                </div>
+
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="commentLeftSection">
+                        <i class="fas fa-quote-left"></i>
+                        <p>There's huge space beetween creativity and imagination</p>
+                        <p class="beforeP">Mark Simmons, Nett Media</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="commentRightSection">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+
+                </div>
+
+
+              
+            </div>
+        </div>
+    </section>
+
+
+    <section class="whoWeAre">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12 d-flex justify-content-center">
+                    <h1>Who We Are</h1>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4 ">
+                    <div class="whoWeAreLeftText">
+                        <h3>We live with <strong>creativity</strong> </h3>
+                        <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directeal desirabilite de un nov lingua franca:On refusa continuar payar custosi traductores.</p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="whoWeAreImg">
+                        <img src="~/Img/creativity.png">
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-2 d-flex justify-content-center">
+                    <div class="teamMember d-flex flex-column">
+                        <img src="~/Img/img-1.jpg" class="img-fluid">
+                        <h3 class="text-center">John Doe</h3>
+                        <p class="text-center">Art director</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 d-flex justify-content-center">
+                    <div class="teamMember d-flex flex-column">
+                        <img src="~/Img/img-2.jpg" class="img-fluid">
+                        <h3 class="text-center">Mike Doe</h3>
+                        <p class="text-center">Web developer</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 d-flex justify-content-center">
+                    <div class="teamMember d-flex flex-column">
+                        <img src="~/Img/img-3.jpg" class="img-fluid">
+                        <h3 class="text-center">Neil Doe</h3>
+                        <p class="text-center">Web designer</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 d-flex justify-content-center">
+                    <div class="teamMember d-flex flex-column">
+                        <img src="~/Img/img-4.jpg" class="img-fluid">
+                        <h3 class="text-center">Mark Joe</h3>
+                        <p class="text-center">UI designer</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 d-flex justify-content-center">
+                    <div class="teamMember d-flex flex-column">
+                        <img src="~/Img/img-5.jpg" class="img-fluid">
+                        <h3 class="text-center">Stephen B</h3>
+                        <p class="text-center">Digital imaging</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Services</h1>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+
+                @foreach (var item in Model.services)
+                {
+                    <div class="col-lg-3">
+                        <div class="sectionService d-flex flex-column">
+
+                            <div class="servicesSectionImg text-center">
+                                <img src="~/Uploads/Services/@item.Image">
+
+                            </div>
+
+                            <div class="serviceText text-center">
+                                <h5>@item.Title</h5>
+                                <p>@item.Text</p>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contactUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contactText text-center">
+                        <h1>Get in Touch</h1>
+                        <p>Reque facer nostro et ius, cu persius mnesarchum disputando eam, clita prompta et mel vidisse phaedrum pri et. Facilisis posidonium ex his. Mutat iudico vis in, mea aeque tamquam scripserit an, mea eu ignota viderer probatus. Lorem legere consetetur eieum. Sumo aeque assentior te eam, pri nominati posidonium consttuam</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="leftContact col-lg-6">
+                    <form class="mt-5">
+                        <div class="mb-3">
+                            <input type="text" class="form-control " id="name" aria-describedby="nameHelp" placeholder="Your Name">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="email" class="form-control  mt-4" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control mt-4" id="subject" aria-describedby="subjectHelp" placeholder="Subject">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="rightContact col-lg-6">
+                    <form class="mt-5">
+                        <div class="mb-3">
+                            <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary mt-2 contactBtn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

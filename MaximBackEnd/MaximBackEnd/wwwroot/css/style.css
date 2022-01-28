@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(26,26,26);
+}
+
+nav {
+    background-color: rgb(26,26,26);
+
+}
+
+.navbar-brand {
+    color:  white !important;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.navbar-brand:hover {
+    color: #1BAC91 !important;
+
+}
+
+.nav-link {
+    font-weight: 700;
+    font-size: .9rem;
+    margin-right: 1.5rem;
+    color: white !important;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.nav-link:hover {
+
+    color: #1BAC91 !important;
+}
+
+.navbar-toggler{
+    color: white !important;
+    background-color: white !important;
+}
+
+
+
+.navbar-toggler-icon {
+    color: white !important;
+    background-color: white !important;
+
+}
+
+/*                                           HERO                               */
+
+.hero {
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: url("../Img/bg-1.jpg") center center;
+    background-size: cover;
+
+}
+
+.sliderImg img {
+    margin-top: 8rem !important;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    display: flex ;
+    justify-content: start ;
+    align-items: center ;
+}
+
+.carousel-item h1 {
+    color: white !important;
+    font-size: 5rem !important;
+}
+
+.carousel-control-prev {
+    margin-top: 17.5rem;
+}
+
+.carousel-control-next {
+    margin-top: 17.5rem;
+}
+
+
+
+
+/* Comment */
+
+.comment {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #1bac91 !important;
+}
+
+.commentLeftSection i {
+    font-size: 3rem;
+    color: #99D4C9 !important;
+    line-height: 1.2rem;
+
+}
+
+.commentLeftSection p {
+    padding-right: 50px;
+    text-align: end;
+    font-size: 2rem;
+    color:  white ;
+
+}
+
+.commentRightSection i {
+    font-size: 13rem;
+    color: white;
+}
+
+
+.beforeP{
+    font-size: 1rem !important;
+    color: #535958 !important;
+}
+
+.beforeP::before {
+    content: "-";
+    margin-right: .5rem;
+}
+
+/* Who We Are */
+
+.whoWeAre {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.whiWeAreLeftText {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.whiWeAreLeftText p {
+    color: #444444 !important;
+}
+
+.teamMember img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Services */
+
+.services {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #F36F36 !important;
+}
+
+.services h1 {
+    color: white;
+}
+
+.sectionService img {
+    width: 200px;
+}
+
+
+.serviceText h5 {
+    margin-top: .5rem;
+    color: white;
+}
+
+.serviceText p {
+    text-align: center;
+    margin-top: .5rem;
+    color: white;
+    padding: 0 50px;
+    font-size: 1rem;
+}
+
+.sectionService {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.sectionService:hover {
+    background-color: #f85915 !important;
+}
+
+/* Contact Us */
+
+.contactUs {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #1BAC91 ;
+}
+
+.contactUs input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.contactUs textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.contactText h1 {
+    color: white !important;
+}
+
+.contactText p {
+    font-size: 18px;
+    color: white;
+    text-align: start;
+}
+
+
+.leftContact input {
+
+    height: 60px;
+}
+
+.rightContact textarea {
+    height: 145px;
+}
+
+.contactBtn {
+    border:none;
+    background-color: #26C8AA;
+    width: 12rem;
+    height: 4rem;
+}
+
+.contactBtn:hover {
+    background-color: #43413E;
+}
+
+/* Footer */
+
+footer {
+    background-color: #2B2B2B;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.footerSection ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.footerSection ul li i {
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    background-color: #414141;
+    color: #656565;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .5rem;
+}
+
+.fa-instagram:hover {
+    background-color: #BA7B3D;
+}
+
+.fa-twitter:hover {
+    background-color: #5AD2EB;
+}
+
+.fa-basketball-ball:hover {
+   background-color: #F57B71;
+}
+
+.fa-pinterest:hover {
+    background-color: #D84848;
+}
+
+footer li i:hover {
+    transition: .5s;
+    color: white !important;
+}
+
+
+.footerSectionText p {
+    color: white;
+}
+
+.footerSectionText a{
+    text-decoration: none;
+    color: white;
+}

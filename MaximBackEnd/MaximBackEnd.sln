@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximBackEnd", "MaximBackEnd\MaximBackEnd.csproj", "{322FED1E-1CC1-4B04-9E7A-9E057AEB6D44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{322FED1E-1CC1-4B04-9E7A-9E057AEB6D44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{322FED1E-1CC1-4B04-9E7A-9E057AEB6D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{322FED1E-1CC1-4B04-9E7A-9E057AEB6D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{322FED1E-1CC1-4B04-9E7A-9E057AEB6D44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53E3F81D-7C3D-4E89-9C2C-2C0D0A837C09}
+	EndGlobalSection
+EndGlobal

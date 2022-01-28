@@ -1,0 +1,19 @@
+﻿@model Service
+<form method="post" asp-action="create" enctype="multipart/form-data">
+    <div class="mb-3">
+        <input asp-for="Title" class="form-control" placeholder="Your Title">
+        <span class="text-danger" asp-validation-for="Title"></span>
+    </div>
+
+    <div class="mb-3">
+        <input asp-for="Text" class="form-control" placeholder="Your Title">
+        <span class="text-danger" asp-validation-for="Text"></span>
+    </div>
+
+    <div class="mb-3">
+        <input asp-for="ImageFile" class="form-control" placeholder="Your Title">
+        <span class="text-danger" asp-validation-for="ImageFile"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

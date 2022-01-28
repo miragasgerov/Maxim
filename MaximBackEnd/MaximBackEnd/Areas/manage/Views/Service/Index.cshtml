@@ -1,0 +1,74 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common
+@model IPagedList<Service>
+@{
+    int count = 0;
+}
+
+<a asp-action="create" class="btn btn-primary">Create</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Text</th>
+            <th scope="col">Image</th>
+            <th scope="col">Action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            count++;
+            <tr>
+                <th scope="row">@count</th>
+                <td>@item.Title</td>
+                <td>@item.Text</td>
+                <td>
+                    <img src="~/uploads/services/@item.Image" width="100" />
+                </td>
+                <td>
+                    @if (item.IsDeleted == true)
+                    {
+                        <span class="btn btn-danger">IsDeleted</span>
+                    }
+                    else
+                    {
+                        <span class="btn btn-danger">NotDeleted</span>
+
+                    }
+                </td>
+                <td>
+                    <a asp-action="edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
+                    <a asp-action="delete" asp-route-id="@item.Id" class="btn btn-danger delete-btn">Delete</a>
+                </td>
+
+            </tr>
+
+        }
+
+    </tbody>
+</table>
+
+
+@section scripts {
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+}
+
+
+<div class="pull-right d-flex justify-content-center">
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }),
+
+    new PagedListRenderOptions
+    {
+      LiElementClasses = new string[] { "page-item" },
+      PageClasses = new string[] { "page-link" },
+      Display = PagedListDisplayMode.IfNeeded
+
+    })
+</div>
