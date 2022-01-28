@@ -142,7 +142,7 @@ namespace MaximBackEnd.Areas.manage.Controllers
             return View("index");
 
             //Muellim Delete isleyir mende sadece buttona basanda null gosterir ctrl+shift+R  basib yenileyende Isdeleted true olur
-            //home indexdede filtirlenir dusmur ora amma o nullin sebebini tapa bilmedim.
+            //home indexdede filtirlenir ve silinen data dusmur indexe  amma o nullin sebebini tapa bilmedim.
 
         }
     }
